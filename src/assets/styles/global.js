@@ -11,11 +11,29 @@ export default createGlobalStyle`
   body{
     background-color: ${({ theme }) => theme.colors.background};
     font-size: 16px;
-    color: ${({ theme }) => theme.colors.primary.main};
+    color: ${({ theme }) => theme.colors.main};
   }
 
   button {
     cursor: pointer;
   }
 
+  .container {
+    max-width: 70rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    margin: 0 auto;
+  }
+
+  a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul,li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
 `;
