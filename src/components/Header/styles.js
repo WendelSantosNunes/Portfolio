@@ -3,22 +3,57 @@ import styled from 'styled-components';
 export const Container = styled.header`
   background-color: ${({ theme }) => theme.colors.backgroundHeader};
 
-  padding: 28px;
+  padding: 0.875rem;
 
   div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    nav ul {
+    img{
+      width: 100%;
+      max-width: 3.4375rem;
+    }
+
+    .desktop ul {
       display: flex;
 
-      li + li {
-        margin-left: 10px;
+      li {
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+          background-color: ${({ theme }) => theme.colors.background};
+        }
       }
 
       a{
         color: #fff
+      }
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @media(max-width: 768px) {
+    .mobile {
+      display: initial;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media(max-width: 576px) {
+    div {
+      img {
+        width: 100%;
+        max-width: 2.7rem;
       }
     }
   }

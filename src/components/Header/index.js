@@ -1,17 +1,36 @@
+import { useState } from 'react';
+
+// Imagens e estilos
+import { List } from 'phosphor-react';
+import logo from '../../assets/images/logo.svg';
 import { Container } from './styles';
 
+// Componentes
+import { MenuMobile } from '../MenuMobile';
+
 export default function Header() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <Container>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
       <div className="container">
-        <h1>Wendel</h1>
-        <nav>
+        <img src={logo} alt="Logo" />
+
+        <nav className="desktop">
           <ul>
             <li><a href="/">Sobre</a></li>
+            <li><a href="/">Habilidades</a></li>
+            <li><a href="/">Cursos</a></li>
             <li><a href="/">Projetos</a></li>
-            <li><a href="/">Eventos</a></li>
+            <li><a href="/">Contato</a></li>
           </ul>
         </nav>
+
+        <List size={32} weight="fill" onClick={() => setMenuIsVisible(true)} className="mobile">teste</List>
       </div>
     </Container>
   );
