@@ -3,5 +3,6 @@ export default {
     background: '#130F1A',
     backgroundHeader: '#23252B',
     main: '#FFFFFF',
+    text: '#FF944D',
   },
 };

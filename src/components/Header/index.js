@@ -22,7 +22,7 @@ export default function Header() {
 
         <nav className="desktop">
           <ul>
-            <li><a href="/">Sobre</a></li>
+            <li><a href="#secao1">Sobre</a></li>
             <li><a href="/">Habilidades</a></li>
             <li><a href="/">Cursos</a></li>
             <li><a href="/">Projetos</a></li>

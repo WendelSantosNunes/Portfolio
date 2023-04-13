@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  position: absolute;
+  position: fixed;
   backdrop-filter: blur(3px);
   width: 100%;
   height: 100%;
@@ -27,7 +27,6 @@ export const Container = styled.div`
     transform: rotate(45deg);
     transition: .7s;
   }
-
 
   nav{
     width: 100%;
@@ -67,4 +66,8 @@ export const Container = styled.div`
       transform: scale(1);
     }
   `}
+
+  @media (max-width: 768px) {
+    z-index: 10; /* Z-index para o menu hamburguer */
+  }
 `;

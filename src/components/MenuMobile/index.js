@@ -17,7 +17,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
       />
       <nav>
         <ul>
-          <li><a href="/">Sobre</a></li>
+          <li><a href="#secao1" onClick={() => setMenuIsVisible(false)}>Sobre</a></li>
           <li><a href="/">Habilidades</a></li>
           <li><a href="/">Cursos</a></li>
           <li><a href="/">Projetos</a></li>

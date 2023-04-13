@@ -5,6 +5,12 @@ export const Container = styled.header`
 
   padding: 0.875rem;
 
+  margin-bottom: 86px;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   div {
     display: flex;
     justify-content: space-between;
@@ -22,7 +28,7 @@ export const Container = styled.header`
         padding: 15px 20px;
         border-radius: 10px;
         cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
+        transition: background-color 0.3s ease-in;
 
         &:hover {
           background-color: ${({ theme }) => theme.colors.background};
