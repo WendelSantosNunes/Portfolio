@@ -4,7 +4,10 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './assets/styles/global';
 import DefaultTheme from './assets/styles/themes/default';
 import Header from './components/Header';
+
+// Componentes
 import { About } from './components/About';
+import { Skills } from './components/Skills';
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <About />
+      <Skills />
     </ThemeProvider>
   );
 }

@@ -5,7 +5,7 @@ export const Container = styled.header`
 
   padding: 0.875rem;
 
-  margin-bottom: 86px;
+  margin-bottom: 5.375rem;
 
   position: sticky;
   top: 0;
@@ -25,8 +25,8 @@ export const Container = styled.header`
       display: flex;
 
       li {
-        padding: 15px 20px;
-        border-radius: 10px;
+        padding: 0.9375rem 1.25rem;
+        border-radius: 0.625rem;
         cursor: pointer;
         transition: background-color 0.3s ease-in;
 
@@ -45,7 +45,7 @@ export const Container = styled.header`
     display: none;
   }
 
-  @media(max-width: 768px) {
+  @media(max-width: 48rem) {
     .mobile {
       display: initial;
     }
@@ -55,7 +55,7 @@ export const Container = styled.header`
     }
   }
 
-  @media(max-width: 576px) {
+  @media(max-width: 36rem) {
     div {
       img {
         width: 100%;

@@ -67,7 +67,7 @@ export const Container = styled.div`
     }
   `}
 
-  @media (max-width: 768px) {
-    z-index: 10; /* Z-index para o menu hamburguer */
+  @media (max-width: 48rem) {
+    z-index: 10;
   }
 `;

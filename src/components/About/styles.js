@@ -74,7 +74,7 @@ export const Container = styled.section`
       }
     }
 
-    @media(max-width: 23.4375rem) {
+    @media(max-width: 24.125rem) {
       div{
         p {
           font-size: 1.2rem;
@@ -99,7 +99,7 @@ export const AboutContainer = styled.div`
 
 
   h2 {
-    font-size: 2.375rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 3.5rem;
 
