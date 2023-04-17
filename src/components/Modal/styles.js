@@ -34,9 +34,10 @@ export const Container = styled.div`
   margin: 0 10px 0 10px;
   height: 426px;
 
-  &.project {
-    height: 470px;
-  }
+  ${({ project }) => project && css`
+    height: 476px;
+    background-color: red;
+  `}
 
   border-radius: 10px;
 
@@ -53,7 +54,6 @@ export const Container = styled.div`
   > div {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     gap: 20px;
 
     div{
@@ -66,11 +66,29 @@ export const Container = styled.div`
       img {
         width: 100%;
         max-width: 524px;
-        height: 360px;
+        height: 100%;
+        max-height: 360px;
       }
 
-      .Links{
-        padding-bottom: 30px;
+      .links{
+        margin-top: 0.8rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        a + a {
+          margin-left: 1rem;
+        }
+
+        a {
+          background-color: ${({ theme }) => theme.colors.text};
+          color: #FFF;
+          border-radius: 10px;
+
+          width: 100%;
+          max-width: 140px;
+          padding: 10px 0;
+        }
       }
      }
 
@@ -109,6 +127,11 @@ export const Container = styled.div`
     max-width: 700px;
     height: 800px;
 
+    ${({ project }) => project && css`
+      height: 850px;
+      background-color: red;
+    `}
+
     div {
       flex-direction: column;
       align-items: center;
@@ -118,7 +141,64 @@ export const Container = styled.div`
           margin: 42px 0 0 0;
           max-width: 524px;
         }
+
+        &.imagensAndLinks {
+
+          img {
+            padding: 0 30px
+          }
+
+          .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        }
       }
     }
+  }
+
+  @media(max-width: 48rem){
+    > svg {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      cursor: pointer;
+      color: ${({ theme }) => theme.colors.text};
+    }
+
+    div{
+      padding-left: 10px;
+      padding-right: 10px;
+
+      div {
+        &.imagensAndLinks,  &.detailsAndData{
+          max-width: 440px;
+
+          h2 {
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 0.875rem;
+          }
+        }
+
+        &.detailsAndData{
+          margin-top: 1rem;
+          .details{
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 36rem) {
+    height: 700px;
+  }
+
+  @media(max-width: 23.4375rem) {
+    height: 620px;
   }
 `;

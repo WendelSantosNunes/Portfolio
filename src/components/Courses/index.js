@@ -15,7 +15,7 @@ export function Courses() {
   const [courseIsVisible, SetCourseIsVisible] = useState(false);
   const [course, SetCourse] = useState({});
 
-  const HigherCoursesArray = [
+  const higherCoursesArray = [
     {
       title: 'Universidade Federal do Piauí',
       image: UFPI,
@@ -24,7 +24,7 @@ export function Courses() {
     },
   ];
 
-  const OnlineCoursesArray = [
+  const onlineCoursesArray = [
     {
       title: 'JStack',
       image: JStack,
@@ -64,12 +64,12 @@ export function Courses() {
   ];
 
   function detailsCourseOnline(index) {
-    SetCourse(OnlineCoursesArray[index]);
+    SetCourse(onlineCoursesArray[index]);
     SetCourseIsVisible(true);
   }
 
   function detailsCourseHigher(index) {
-    SetCourse(HigherCoursesArray[index]);
+    SetCourse(higherCoursesArray[index]);
     SetCourseIsVisible(true);
   }
 
@@ -79,6 +79,7 @@ export function Courses() {
         courseIsVisible={courseIsVisible}
         SetCourseIsVisible={SetCourseIsVisible}
         course={course}
+        projectModal={false}
       />
       <h2 id="secao3">Cursos</h2>
 
@@ -87,7 +88,7 @@ export function Courses() {
 
         <div>
           {
-            HigherCoursesArray.map((item, index) => (
+            higherCoursesArray.map((item, index) => (
               <div key={item.title}>
                 <div>
                   <img src={item.image} alt="Paad UFPI" />
@@ -112,7 +113,7 @@ export function Courses() {
 
         <div>
           {
-            OnlineCoursesArray.map((item, index) => (
+            onlineCoursesArray.map((item, index) => (
               <div key={item.title}>
                 <div>
                   <img src={item.image} alt="Paad UFPI" />

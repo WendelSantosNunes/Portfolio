@@ -9,6 +9,7 @@ import Header from './components/Header';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Courses } from './components/Courses';
+import { Projects } from './components/Projects';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Skills />
       <Courses />
+      <Projects />
     </ThemeProvider>
   );
 }
