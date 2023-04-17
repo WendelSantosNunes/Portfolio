@@ -24,7 +24,7 @@ export const Container = styled.header`
     .desktop ul {
       display: flex;
 
-      li {
+      li a{
         padding: 0.9375rem 1.25rem;
         border-radius: 0.625rem;
         cursor: pointer;

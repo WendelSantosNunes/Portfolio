@@ -13,7 +13,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(17, 18, 17, 0.95);
   background: linear-gradient(34deg, #23252B 0%, rgba(17,18,17,0.95) 95%);
   opacity: 0;
   pointer-events: none;

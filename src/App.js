@@ -8,6 +8,7 @@ import Header from './components/Header';
 // Componentes
 import { About } from './components/About';
 import { Skills } from './components/Skills';
+import { Courses } from './components/Courses';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Courses />
     </ThemeProvider>
   );
 }

@@ -24,7 +24,7 @@ export default function Header() {
           <ul>
             <li><a href="#secao1">Sobre</a></li>
             <li><a href="#secao2">Habilidades</a></li>
-            <li><a href="/">Cursos</a></li>
+            <li><a href="#secao3">Cursos</a></li>
             <li><a href="/">Projetos</a></li>
             <li><a href="/">Contato</a></li>
           </ul>

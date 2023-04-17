@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  margin-bottom: 7.5rem;
 
   h2{
     font-size: 2rem;
@@ -19,6 +18,7 @@ export const Container = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: 20px;
+    margin-bottom: 5rem;
 
     div {
       margin: 0 auto;
