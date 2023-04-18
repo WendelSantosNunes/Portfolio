@@ -10,6 +10,7 @@ import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Courses } from './components/Courses';
 import { Projects } from './components/Projects';
+import { SocialMedia } from './components/SocialMedia';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Courses />
       <Projects />
+      <SocialMedia />
     </ThemeProvider>
   );
 }
