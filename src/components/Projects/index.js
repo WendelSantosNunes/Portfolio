@@ -67,7 +67,7 @@ export function Projects() {
         </>
       ),
       info: {
-        linkproject: 'https://github.com/WendelSantosNunes/SeLig-UFPI',
+        linkproject: 'https://github.com/WendelSantosNunes/Ignite-react-desafio-2',
         linkWebSite: 'https://ignite-react-desafio-2.vercel.app/',
       },
     },
@@ -81,8 +81,8 @@ export function Projects() {
         </>
       ),
       info: {
-        linkproject: 'https://github.com/WendelSantosNunes/SeLig-UFPI',
-        linkWebSite: 'https://ignite-react-desafio-2.vercel.app/',
+        linkproject: 'https://github.com/WendelSantosNunes/Ignite-desafio-1',
+        linkWebSite: 'https://ignite-desafio-1.vercel.app/',
       },
     },
   ];
