@@ -11,6 +11,7 @@ import { Skills } from './components/Skills';
 import { Courses } from './components/Courses';
 import { Projects } from './components/Projects';
 import { SocialMedia } from './components/SocialMedia';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Courses />
       <Projects />
       <SocialMedia />
+      <Footer />
     </ThemeProvider>
   );
 }

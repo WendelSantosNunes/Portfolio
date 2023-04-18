@@ -19,7 +19,7 @@ export const Container = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
     grid-gap: 15px;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 150px;
 
     div {
@@ -39,8 +39,7 @@ export const Container = styled.section`
       text-align: center;
     }
 
-    @media(max-width: 48rem){
-      justify-content: center;
+    @media(max-width: 62rem){
       gap: 40px;
     }
   }
