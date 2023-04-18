@@ -21,22 +21,32 @@ export const Container = styled.header`
       max-width: 3.4375rem;
     }
 
+    svg {
+      cursor: pointer;
+    }
+
+
     .desktop ul {
       display: flex;
 
-      li a{
-        padding: 0.9375rem 1.25rem;
-        border-radius: 0.625rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in;
 
-        &:hover {
-          background-color: ${({ theme }) => theme.colors.background};
+      li{
+        list-style: none;
+        a {
+          padding: 0.9375rem 1.25rem;
+          border-radius: 0.625rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in;
+
+          &:hover {
+            background-color: ${({ theme }) => theme.colors.text};
+          }
         }
       }
 
       a{
-        color: #fff
+        color: #fff;
+        font-size: 1rem;
       }
     }
   }

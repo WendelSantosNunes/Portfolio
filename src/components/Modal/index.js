@@ -24,8 +24,8 @@ export function Modal({
             {
               course.info && (
               <div className="links">
-                {course.info.linkproject && <a href={course.info.linkproject} target="_blank" rel="noreferrer">Projeto</a>}
-                {course.info.linkWebSite && <a href={course.info.linkWebSite} target="_blank" rel="noreferrer">Repositório</a>}
+                {course.info.linkWebSite && <a href={course.info.linkWebSite} target="_blank" rel="noreferrer">Projeto</a>}
+                {course.info.linkproject && <a href={course.info.linkproject} target="_blank" rel="noreferrer">Repositório</a>}
                 {course.info.linkPost && <a href={course.info.linkPost} target="_blank" rel="noreferrer">Linkedin</a>}
               </div>
               )

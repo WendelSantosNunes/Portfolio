@@ -32,7 +32,7 @@ export default createGlobalStyle`
   }
 
   ul,li {
-    list-style: none;
+    /* list-style: none; */
     padding: 0px;
     margin: 0px;
   }

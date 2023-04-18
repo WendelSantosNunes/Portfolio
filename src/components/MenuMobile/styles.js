@@ -19,16 +19,21 @@ export const Container = styled.div`
   transform: translateY(50px);
   transition: .5s;
 
-  > svg {
+  svg {
     position: absolute;
     top: 1rem;
     right: 1rem;
     transform: rotate(45deg);
     transition: .7s;
+    cursor: pointer;
   }
 
   nav{
     width: 100%;
+    li {
+      list-style: none;
+    }
+
     ul {
       display: flex;
       align-items: center;
@@ -46,7 +51,7 @@ export const Container = styled.div`
         transition: background-color 0.2s ease-in-out;
 
         &:hover{
-          background-color: ${({ theme }) => theme.colors.background};
+          background-color: ${({ theme }) => theme.colors.text};
         }
       }
     }

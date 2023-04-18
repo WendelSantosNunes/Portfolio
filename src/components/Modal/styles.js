@@ -113,6 +113,15 @@ export const Container = styled.div`
       .details{
         text-align: justify;
         height: 200px;
+
+        font-size: 15px;
+
+        ul {
+          margin-top: 0.5rem;
+          li {
+            margin-left: 20px;
+          }
+        }
       }
 
       .date{
@@ -151,7 +160,7 @@ export const Container = styled.div`
           .links{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
           }
         }
       }
@@ -179,7 +188,7 @@ export const Container = styled.div`
             font-size: 1rem;
           }
 
-          p {
+          p,a {
             font-size: 0.875rem;
           }
         }
