@@ -6,6 +6,7 @@ import paad from '../../assets/images/PAAD.png';
 // import seLigaUpfi from '../../assets/images/seLigaUfpi.png';
 import myContacts from '../../assets/images/myContacts.png';
 import coffe from '../../assets/images/coffe.png';
+import todoList from '../../assets/images/todoList.png';
 
 export function Projects() {
   const [projectIsVisible, SetprojectIsVisible] = useState(false);
@@ -71,12 +72,12 @@ export function Projects() {
       },
     },
     {
-      title: 'Coffee Delivery',
-      image: coffe,
+      title: 'To-Do List',
+      image: todoList,
       date: '23 de outubro de 2022',
       text: (
         <>
-          Este foi um dos desafios do curso Ignite da Rocketseat. O objetivo deste desafio é criar um site de todo-list para revisar os conteúdos aprendidos no primeiro módulo, tais como React, TypeScript e CSS Modules.
+          Este foi um dos desafios do curso Ignite da Rocketseat. O objetivo deste desafio é criar um site de to-do list para revisar os conteúdos aprendidos no primeiro módulo, tais como React, TypeScript e CSS Modules.
         </>
       ),
       info: {
