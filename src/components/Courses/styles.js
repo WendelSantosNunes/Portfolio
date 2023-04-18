@@ -56,7 +56,7 @@ export const Container = styled.section`
         img{
           width: 100%;
           max-width: 19.275625rem;
-          height: 217px;
+          /* height: 217px; */
         }
 
         .description {
@@ -103,10 +103,18 @@ export const Container = styled.section`
       @media(max-width: 24.125rem) {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-        div {
+        > div {
           .description {
             max-width: 250px;
           }
+
+          &:hover {
+            div{
+              transform: scale(1.0);
+              transition: transform 0.15s ease-in;
+            }
+          }
+
           img {
             max-width: 250px;
           }

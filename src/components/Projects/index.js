@@ -4,6 +4,7 @@ import { Modal } from '../Modal';
 
 import paad from '../../assets/images/PAAD.png';
 import seLigaUpfi from '../../assets/images/seLigaUfpi.png';
+import myContacts from '../../assets/images/myContacts.png';
 
 export function Projects() {
   const [projectIsVisible, SetprojectIsVisible] = useState(false);
@@ -12,7 +13,7 @@ export function Projects() {
   const projectList = [
     {
       title: 'MyContacts',
-      image: seLigaUpfi,
+      image: myContacts,
       date: 'Em andamento',
       text: 'Andamento',
       info: {
@@ -32,7 +33,7 @@ export function Projects() {
       },
     },
     {
-      title: 'seLigaUpfi',
+      title: 'Se Liga Ufpi',
       image: seLigaUpfi,
       date: '29 de março de 2023',
       text: 'Andamento',
@@ -66,6 +67,7 @@ export function Projects() {
               <div key={item.title}>
                 <div>
                   <img src={item.image} alt="Paad UFPI" />
+
                 </div>
                 <div className="description">
                   <p>{item.date}</p>
