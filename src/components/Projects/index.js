@@ -19,7 +19,7 @@ export function Projects() {
       date: 'Em andamento',
       text: 'Em andamento',
       info: {
-        // linkproject: 'https://github.com/WendelSantosNunes/SeLig-UFPI',
+        linkproject: 'https://github.com/WendelSantosNunes/MyContacts',
         // linkWebSite: 'https://wendelnunes.pythonanywhere.com/',
         // linkPost: 'http',
       },
