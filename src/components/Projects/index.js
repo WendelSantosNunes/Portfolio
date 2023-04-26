@@ -17,7 +17,7 @@ export function Projects() {
       title: 'ReceitaApp',
       image: receita,
       date: '25 de Abril de 2023',
-      text: 'Em andamento',
+      text: 'Esse projeto foi realizado durante a maratona do sujeito programado e tem como objetivo me ajudar a dar meus primeiros passos na área mobile. Para deixar o projeto mais completo, utilizei TypeScript em vez de JavaScript.',
       info: {
         linkproject: 'https://github.com/WendelSantosNunes/Receitas_Mobile',
         // linkWebSite: 'https://wendelnunes.pythonanywhere.com/',

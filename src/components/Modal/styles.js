@@ -61,7 +61,7 @@ export const Container = styled.div`
 
       &.imagensAndLinks {
         margin: 42px 0 0 30px;
-        /* text-align: center; */
+        text-align: center;
         max-width: 524px;
 
         img {
@@ -141,7 +141,7 @@ export const Container = styled.div`
     height: 800px;
 
     ${({ project }) => project && css`
-      height: 850px;
+      height: 750px;
       background-color: red;
     `}
 
@@ -165,6 +165,13 @@ export const Container = styled.div`
             display: flex;
             flex-direction: row;
             justify-content: center;
+          }
+        }
+
+        &.detailsAndData{
+          margin-top: 1rem;
+          .details{
+            height: auto;
           }
         }
       }
@@ -196,13 +203,6 @@ export const Container = styled.div`
             font-size: 0.875rem;
           }
         }
-
-        &.detailsAndData{
-          margin-top: 1rem;
-          .details{
-            height: auto;
-          }
-        }
       }
     }
   }
@@ -213,5 +213,16 @@ export const Container = styled.div`
 
   @media(max-width: 23.4375rem) {
     height: 620px;
+
+    div{
+
+      div {
+        &.imagensAndLinks{
+          img.active {
+            max-width: 160px;
+          }
+        }
+      }
+    }
   }
 `;
