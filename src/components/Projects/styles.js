@@ -56,7 +56,7 @@ export const Container = styled.section`
         img{
           width: 100%;
           max-width: 19.275625rem;
-          /* height: 217px; */
+          height: 217px;
         }
 
         .description {

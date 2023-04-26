@@ -20,7 +20,7 @@ export function Modal({
         />
         <div>
           <div className="imagensAndLinks">
-            <img src={course.image} alt={course.title} />
+            <img src={course.image} alt={course.title} className={course.mobile} />
             {
               course.info && (
               <div className="links">

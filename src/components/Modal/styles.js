@@ -59,76 +59,80 @@ export const Container = styled.div`
     div{
       width: 100%;
 
-     &.imagensAndLinks {
-      margin: 42px 0 0 30px;
-      max-width: 524px;
-
-      img {
-        width: 100%;
+      &.imagensAndLinks {
+        margin: 42px 0 0 30px;
+        /* text-align: center; */
         max-width: 524px;
-        height: 100%;
-        max-height: 360px;
-      }
 
-      .links{
-        margin-top: 0.8rem;
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-        a + a {
-          margin-left: 1rem;
+        img {
+          max-width: 524px;
+          height: 100%;
+          max-height: 360px;
         }
 
-        a {
-          background-color: ${({ theme }) => theme.colors.text};
-          color: #FFF;
-          border-radius: 10px;
-
+        img.false{
           width: 100%;
-          max-width: 140px;
-          padding: 10px 0;
         }
-      }
-     }
 
-     &.detailsAndData {
-      margin: 42px 30px 0 0px;
-      max-width: 424px;
-      color: #FFF;
+        .links{
+          margin-top: 0.8rem;
+          display: flex;
+          align-items: center;
+          text-align: center;
 
-      h2 {
-        color: ${({ theme }) => theme.colors.text};
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        text-align: left;
+          a + a {
+            margin-left: 1rem;
+          }
 
-        width: 100%;
-        max-width: 390px ;
-        &::after{
-          display: none;
-        }
-      }
+          a {
+            background-color: ${({ theme }) => theme.colors.text};
+            color: #FFF;
+            border-radius: 10px;
 
-      .details{
-        text-align: justify;
-        height: 200px;
-
-        font-size: 15px;
-
-        ul {
-          margin-top: 0.5rem;
-          li {
-            margin-left: 20px;
+            width: 100%;
+            max-width: 140px;
+            padding: 10px 0;
           }
         }
       }
 
-      .date{
-        margin-top: 1rem;
-        color: ${({ theme }) => theme.colors.text};
+      &.detailsAndData {
+        margin: 42px 30px 0 0px;
+        max-width: 424px;
+        color: #FFF;
+
+        h2 {
+          color: ${({ theme }) => theme.colors.text};
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+          text-align: left;
+
+          width: 100%;
+          max-width: 390px ;
+          &::after{
+            display: none;
+          }
+        }
+
+        .details{
+          text-align: justify;
+          height: 200px;
+
+          font-size: 15px;
+
+          ul {
+            margin-top: 0.5rem;
+            li {
+              margin-left: 20px;
+            }
+          }
+        }
+
+        .date{
+          margin-top: 1rem;
+          color: ${({ theme }) => theme.colors.text};
+        }
       }
-     }
     }
   }
 

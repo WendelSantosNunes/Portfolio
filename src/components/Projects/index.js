@@ -3,16 +3,28 @@ import { Container } from './styles';
 import { Modal } from '../Modal';
 
 import paad from '../../assets/images/PAAD.png';
-// import seLigaUpfi from '../../assets/images/seLigaUfpi.png';
 import myContacts from '../../assets/images/myContacts.png';
 import coffe from '../../assets/images/coffe.png';
 import todoList from '../../assets/images/todoList.png';
+import receita from '../../assets/images/img1.jpeg';
 
 export function Projects() {
   const [projectIsVisible, SetprojectIsVisible] = useState(false);
   const [project, SetProject] = useState({});
 
   const projectList = [
+    {
+      title: 'ReceitaApp',
+      image: receita,
+      date: '25 de Abril de 2023',
+      text: 'Em andamento',
+      info: {
+        linkproject: 'https://github.com/WendelSantosNunes/Receitas_Mobile',
+        // linkWebSite: 'https://wendelnunes.pythonanywhere.com/',
+        // linkPost: 'http',
+      },
+      mobile: 'active',
+    },
     {
       title: 'MyContacts',
       image: myContacts,
@@ -23,6 +35,7 @@ export function Projects() {
         // linkWebSite: 'https://wendelnunes.pythonanywhere.com/',
         // linkPost: 'http',
       },
+      mobile: 'false',
     },
     {
       title: 'Pesquisas Avançadas em Análise de Dados (PAAD)',
@@ -37,26 +50,8 @@ export function Projects() {
         linkproject: 'https://github.com/WendelSantosNunes/PaadUfpi',
         linkWebSite: 'https://paad-ufpi-front.vercel.app/',
       },
+      mobile: 'false',
     },
-    // {
-    //   title: 'Se Liga Ufpi',
-    //   image: seLigaUpfi,
-    //   date: '29 de março de 2023',
-    //   text: (
-    //     <>
-    //       Em andamento!
-    //       Este projeto foi desenvolvido durante a disciplina de Programação para Web II com meus colegas Eva e Josean.
-    //       {' '}
-    //       <br />
-    //       Trata-se de um local de conexão para todos que fazem parte do Campus Senador Helvídio Nunes de Barros (CSHNB). Após a pandemia de COVID-19 e o retorno das aulas presenciais, havia uma certa distância entre a comunidade acadêmica do CSHNB . O Se Lig@ UFPI foi criado para quebrar o gelo e aproximar as pessoas.
-    //     </>
-    //   ),
-    //   info: {
-    //     linkproject: 'https://github.com/WendelSantosNunes/SeLig-UFPI',
-    //     linkWebSite: 'https://wendelnunes.pythonanywhere.com/',
-    //     // linkPost: 'http',
-    //   },
-    // },
     {
       title: 'Coffee Delivery',
       image: coffe,
@@ -70,6 +65,7 @@ export function Projects() {
         linkproject: 'https://github.com/WendelSantosNunes/Ignite-react-desafio-2',
         linkWebSite: 'https://ignite-react-desafio-2.vercel.app/',
       },
+      mobile: 'false',
     },
     {
       title: 'To-Do List',
@@ -84,6 +80,7 @@ export function Projects() {
         linkproject: 'https://github.com/WendelSantosNunes/Ignite-desafio-1',
         linkWebSite: 'https://ignite-desafio-1.vercel.app/',
       },
+      mobile: 'false',
     },
   ];
 
@@ -110,7 +107,7 @@ export function Projects() {
             projectList.map((item, index) => (
               <div key={item.title}>
                 <div>
-                  <img src={item.image} alt="Paad UFPI" />
+                  <img src={item.image} alt="Paad UFPI" className={item.mobile} />
 
                 </div>
                 <div className="description">
