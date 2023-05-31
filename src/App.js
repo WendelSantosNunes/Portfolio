@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { inject } from '@vercel/analytics';
 
 // Estilos
 import GlobalStyles from './assets/styles/global';
@@ -14,6 +15,8 @@ import { SocialMedia } from './components/SocialMedia';
 import { Footer } from './components/Footer';
 
 function App() {
+  inject();
+
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyles />
